@@ -1,0 +1,24 @@
+{
+  "name": "ui-workbench",
+  "version": "0.0.1",
+  "exports": {
+    ".": "./workbenches/ui/local.ts"
+  },
+  "tasks": {
+    "web": "fai run workbenches/ui/local.ts --mode Web"
+  },
+  "imports": {
+    // NOTE: 0.0.406 does NOT yet include WebMode. `WebMode` ships as part of
+    // Track 6 Phase 10 (D.10.1 on fathym-deno/power-ai
+    // feature/track-6-phases-9-10-11; JSR publish pending as part of the
+    // Phase 10 cascade release). Pin needs a bump to the post-cascade
+    // release version once JSR lands. Kept at 0.0.406 so deno.jsonc stays
+    // syntactically valid; the WebMode import in workbenches/ui/local.ts
+    // will fail until the bump.
+    "@fathym/fai/workbenches": "jsr:@fathym/fai@0.0.406/workbenches",
+    "zod": "npm:zod@4.1.13"
+  },
+  "compilerOptions": {
+    "strict": true
+  }
+}
