@@ -15,7 +15,7 @@
     // release version once JSR lands. Kept at 0.0.406 so deno.jsonc stays
     // syntactically valid; the WebMode import in workbenches/ui/local.ts
     // will fail until the bump.
-    "@fathym/fai/workbenches": "jsr:@fathym/fai@0.0.406/workbenches",
+    "@fathym/fai/workbenches": "jsr:@fathym/fai@0.0.785/workbenches",
     "zod": "npm:zod@4.1.13"
   },
   "compilerOptions": {
