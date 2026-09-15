@@ -2,7 +2,7 @@
 
 Track 6 Phase 10 sample workbench demonstrating **WebMode** + the **workbench-consumes-workbench** primitive.
 
-Sibling to [`api-workbench`](https://github.com/fathym-deno/api-workbench) (the API-mode workbench this one consumes) and [`hello-workbench`](https://github.com/fathym-deno/hello-workbench) (the MCP-mode reference).
+Sibling to [`api-workbench`](https://github.com/fathym/api-workbench) (the API-mode workbench this one consumes) and [`hello-workbench`](https://github.com/fathym-deno/hello-workbench) (the MCP-mode reference).
 
 ## What it demonstrates
 
@@ -26,9 +26,9 @@ Two Phase 10 primitives landing together in one sample:
 
 ## Deploy via OpenX (post cascade release)
 
-1. Ensure Phase 9's [`api-workbench`](https://github.com/fathym-deno/api-workbench) is deployed in the same workspace with APISlug `api-sample` and API mode enabled. That's the target this UI workbench consumes.
+1. Ensure Phase 9's [`api-workbench`](https://github.com/fathym/api-workbench) is deployed in the same workspace with APISlug `api-sample` and API mode enabled. That's the target this UI workbench consumes.
 2. Drop a **SurfaceWorkbench** onto a surface. In the inspector:
-   - **Source** tab: Repo `https://github.com/fathym-deno/ui-workbench`, Ref `main`, Entry `workbenches/ui/local.ts`
+   - **Source** tab: Repo `https://github.com/fathym/ui-workbench`, Ref `main`, Entry `workbenches/ui/local.ts`
    - **Hosting** tab: APISlug `ui-sample`
    - **Consumes** tab (Phase 10 D.10.6): add row `Workbench: api-sample`, `Mode: API`, `As: products`
    - **Modes** tab (after first deploy): enable `Web`
@@ -61,7 +61,7 @@ Starts a local HTTP server on `http://localhost:4969`. The `/products` route won
 
 - **Track 6 v2 execution tracker**: [`o-industrial/oi-core-pack#61`](https://github.com/o-industrial/oi-core-pack/issues/61)
 - **Phase 10 spec** (on `fathym-dev-space`): [`.workbench/.workstreams/2026-04-06-NewNodeCapabilities/track-6-workbench-node/phase-10-web-mode-composition.md`](https://github.com/fathym-deno/fathym-dev-space/blob/feature/track-6-phases-9-10-11/.workbench/.workstreams/2026-04-06-NewNodeCapabilities/track-6-workbench-node/phase-10-web-mode-composition.md)
-- **The api-workbench this sample consumes**: [`fathym-deno/api-workbench`](https://github.com/fathym-deno/api-workbench)
+- **The api-workbench this sample consumes**: [`fathym/api-workbench`](https://github.com/fathym/api-workbench)
 - **The MCP-mode reference sample**: [`fathym-deno/hello-workbench`](https://github.com/fathym-deno/hello-workbench)
 
 ## License
